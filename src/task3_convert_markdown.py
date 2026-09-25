@@ -1,194 +1,137 @@
 """
-Task 3 — Chuẩn hóa tài liệu sang Markdown.
+Task 3 — Chuẩn hóa dữ liệu sang Markdown.
 
 Hướng dẫn:
-    1. Đọc PDF/DOCX từ data/landing/legal/  →  data/standardized/legal/
-    2. Đọc JSON từ data/landing/news/        →  data/standardized/news/
-    3. Mỗi output gồm file .md (nội dung) và .json sidecar (metadata).
-    4. Chạy acceptance test để kiểm tra.
+    1. Dùng MarkItDown để convert PDF/DOCX.
+    2. Đọc JSON và giữ metadata ở đầu file Markdown.
+    3. Giữ cấu trúc thư mục legal/ và news/.
+    4. Không tạo file rỗng hoặc file trùng khi chạy lại.
 
-Cài markitdown (nếu chưa có):
-    pip install markitdown
+Cài đặt:
+    Dependency MarkItDown đã được khai báo trong pyproject.toml.
+
+Thiết kế:
+    - Tên file output = stem của file input, nên chạy lại sẽ GHI ĐÈ đúng file cũ
+      (idempotent), không sinh bản sao.
+    - File tin tức luôn có header chuẩn gồm title / URL nguồn / ngày crawl để
+      Task 4 trích metadata (url, title) cho citation.
+    - Nội dung rỗng (convert thất bại, markdown trắng) bị bỏ qua thay vì tạo
+      file rỗng làm hỏng acceptance test.
+    - Lỗi từng file được log và không làm dừng toàn bộ batch.
 """
 
 import json
-import re
 from pathlib import Path
 
-from markitdown import MarkItDown
 
-# ---- Đường dẫn ----
-BASE_DIR = Path(__file__).parent.parent
-LANDING_DIR = BASE_DIR / "data" / "landing"
-STANDARDIZED_DIR = BASE_DIR / "data" / "standardized"
+LANDING_DIR = Path(__file__).parent.parent / "data" / "landing"
+OUTPUT_DIR = Path(__file__).parent.parent / "data" / "standardized"
 
-
-# ============================================================
-#  Helper chung
-# ============================================================
-
-def _sanitize_filename(name: str) -> str:
-    """Bỏ dấu, ký tự đặc biệt; giữ chữ thường + gạch nối."""
-    name = name.lower().strip()
-    name = re.sub(r"[^\w\s-]", "", name)
-    name = re.sub(r"[\s_]+", "-", name)
-    name = re.sub(r"-+", "-", name).strip("-")
-    return name or "untitled"
+LEGAL_EXTENSIONS = {".pdf", ".doc", ".docx"}
 
 
-def _write_output(
-    output_dir: Path,
-    stem: str,
-    markdown_content: str,
-    metadata: dict,
-) -> None:
-    """Ghi file .md và sidecar .json vào output_dir."""
+def convert_legal_docs() -> int:
+    """Convert PDF/DOCX trong data/landing/legal sang standardized/legal.
+
+    Trả về số file convert thành công.
+    """
+    from markitdown import MarkItDown
+
+    legal_dir = LANDING_DIR / "legal"
+    output_dir = OUTPUT_DIR / "legal"
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    md_path = output_dir / f"{stem}.md"
-    md_path.write_text(markdown_content.strip(), encoding="utf-8")
-
-    json_path = output_dir / f"{stem}.json"
-    json_path.write_text(
-        json.dumps(metadata, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-    print(f"  ✓ {md_path.relative_to(BASE_DIR)}  "
-          f"({len(markdown_content):,} chars)")
-
-
-# ============================================================
-#  Nhánh 1: Tài liệu chính sách (PDF / DOCX)
-# ============================================================
-
-def convert_legal() -> int:
-    """
-    Chuyển đổi mọi file PDF/DOCX trong data/landing/legal/
-    sang Markdown chuẩn hóa trong data/standardized/legal/.
-
-    Trả về số file đã chuyển đổi thành công.
-    """
-    landing = LANDING_DIR / "legal"
-    output = STANDARDIZED_DIR / "legal"
-
-    if not landing.exists():
-        print("⚠ data/landing/legal/ không tồn tại. Chạy Task 1 trước.")
+    if not legal_dir.is_dir():
+        print(f"Missing directory: {legal_dir}")
         return 0
 
-    md_converter = MarkItDown()
-    count = 0
+    converter = MarkItDown()
+    converted = 0
 
-    for filepath in sorted(landing.iterdir()):
-        if filepath.suffix.lower() not in (".pdf", ".doc", ".docx"):
+    for path in sorted(legal_dir.iterdir()):
+        if not path.is_file() or path.suffix.lower() not in LEGAL_EXTENSIONS:
             continue
-
         try:
-            result = md_converter.convert(str(filepath))
-            markdown_text = result.text_content or ""
-        except Exception as exc:
-            print(f"  ✗ Lỗi chuyển đổi {filepath.name}: {exc}")
-            continue
+            result = converter.convert(str(path))
+            text = (result.text_content or "").strip()
+            if not text:
+                print(f"Skipped (empty content): {path.name}")
+                continue
 
-        if not markdown_text.strip():
-            print(f"  ⚠ {filepath.name} cho nội dung rỗng, bỏ qua.")
-            continue
+            output_path = output_dir / f"{path.stem}.md"
+            output_path.write_text(text + "\n", encoding="utf-8")
+            converted += 1
+            print(f"Converted: {path.name} -> standardized/legal/{output_path.name} "
+                  f"({len(text):,} chars)")
+        except Exception as error:
+            # Một file lỗi không được làm hỏng cả batch; kiểm tra lại file đó.
+            print(f"Failed: {path.name} -- {error}")
 
-        # Metadata sidecar
-        stem = _sanitize_filename(filepath.stem)
-        metadata = {
-            "source": str(filepath.relative_to(BASE_DIR)),
-            "title": filepath.stem.replace("-", " ").replace("_", " ").title(),
-            "doc_type": "legal",
-            "url": None,
-        }
-
-        _write_output(output, stem, markdown_text, metadata)
-        count += 1
-
-    print(f"\nLegal: đã chuyển {count} file → {output.relative_to(BASE_DIR)}")
-    return count
+    print(f"Legal documents converted: {converted}")
+    return converted
 
 
-# ============================================================
-#  Nhánh 2: Bài viết / tin tức (JSON từ Crawl4AI)
-# ============================================================
+def convert_news_articles() -> int:
+    """Convert JSON bài viết trong data/landing/news sang standardized/news.
 
-def convert_news() -> int:
+    Header Markdown giữ metadata nguồn để Task 4 parse ngược lại cho citation.
+    Trả về số file convert thành công.
     """
-    Đọc mọi file JSON trong data/landing/news/
-    và ghi thành Markdown + sidecar trong data/standardized/news/.
+    news_dir = LANDING_DIR / "news"
+    output_dir = OUTPUT_DIR / "news"
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    Trả về số file đã chuyển đổi thành công.
-    """
-    landing = LANDING_DIR / "news"
-    output = STANDARDIZED_DIR / "news"
-
-    if not landing.exists():
-        print("⚠ data/landing/news/ không tồn tại. Chạy Task 2 trước.")
+    if not news_dir.is_dir():
+        print(f"Missing directory: {news_dir}")
         return 0
 
-    count = 0
+    converted = 0
 
-    for filepath in sorted(landing.glob("*.json")):
+    for path in sorted(news_dir.glob("*.json")):
         try:
-            raw = json.loads(filepath.read_text(encoding="utf-8"))
-        except Exception as exc:
-            print(f"  ✗ Lỗi đọc {filepath.name}: {exc}")
-            continue
+            data = json.loads(path.read_text(encoding="utf-8"))
 
-        # Lấy nội dung markdown từ crawl
-        markdown_text = raw.get("content_markdown", "").strip()
-        if not markdown_text:
-            print(f"  ⚠ {filepath.name} không có content_markdown, bỏ qua.")
-            continue
+            title = str(data.get("title") or path.stem).strip()
+            url = str(data.get("url") or "").strip()
+            date_crawled = str(data.get("date_crawled") or "").strip()
+            body = str(data.get("content_markdown") or "").strip()
 
-        # Metadata
-        url = raw.get("url")
-        title = raw.get("title", filepath.stem)
-        date_crawled = raw.get("date_crawled", "")
+            if not body:
+                print(f"Skipped (empty content_markdown): {path.name}")
+                continue
 
-        stem = _sanitize_filename(title)
-        # Tránh tên file quá dài
-        if len(stem) > 80:
-            stem = stem[:80].rstrip("-")
+            header = (
+                f"# {title}\n\n"
+                f"**Source:** {url}\n\n"
+                f"**Crawled:** {date_crawled}\n\n---\n\n"
+            )
 
-        metadata = {
-            "source": str(filepath.relative_to(BASE_DIR)),
-            "title": title,
-            "doc_type": "news",
-            "url": url,
-            "date_crawled": date_crawled,
-        }
+            output_path = output_dir / f"{path.stem}.md"
+            output_path.write_text(header + body + "\n", encoding="utf-8")
+            converted += 1
+            print(f"Converted: {path.name} -> standardized/news/{output_path.name} "
+                  f"({len(header) + len(body):,} chars)")
+        except (json.JSONDecodeError, KeyError, TypeError) as error:
+            print(f"Failed: {path.name} -- {error}")
 
-        _write_output(output, stem, markdown_text, metadata)
-        count += 1
-
-    print(f"\nNews: đã chuyển {count} file → {output.relative_to(BASE_DIR)}")
-    return count
+    print(f"News articles converted: {converted}")
+    return converted
 
 
-# ============================================================
-#  Main
-# ============================================================
+def convert_all() -> None:
+    """Convert toàn bộ dữ liệu landing."""
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    legal_count = convert_legal_docs()
+    news_count = convert_news_articles()
 
-def main() -> None:
-    print("=" * 60)
-    print("Task 3 — Chuẩn hóa tài liệu sang Markdown")
-    print("=" * 60)
+    # Cảnh báo sớm nếu chưa đủ số lượng tối thiểu của acceptance test.
+    if legal_count < 3:
+        print(f"WARNING: chi co {legal_count}/3 legal documents toi thieu.")
+    if news_count < 5:
+        print(f"WARNING: chi co {news_count}/5 news articles toi thieu.")
 
-    n_legal = convert_legal()
-    print()
-    n_news = convert_news()
-
-    print()
-    print("=" * 60)
-    total = n_legal + n_news
-    if total == 0:
-        print("⚠ Không có file nào được chuyển đổi. Kiểm tra lại Task 1 & 2.")
-    else:
-        print(f"✅ Hoàn thành: {n_legal} legal + {n_news} news = {total} file")
-    print("=" * 60)
+    print(f"Saved Markdown to: {OUTPUT_DIR}")
 
 
 if __name__ == "__main__":
-    main()
+    convert_all()
