@@ -4,8 +4,8 @@
 
 - Họ và tên: Phùng Đức Đăng
 - Mã học viên: 2A202602856
-- Nhóm:
-- Repository/branch: K4-L3B-RAG-Pipeline / `dangpd`
+- Nhóm: Kocoten
+- Repository/branch: https://github.com/ngoclongdo/K4-L3B-RAG-Pipeline/tree/dangpd
 
 ## Phần việc đã thực hiện
 
