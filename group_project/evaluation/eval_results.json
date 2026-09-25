@@ -1,0 +1,961 @@
+{
+  "A_dense_only": {
+    "summary": {
+      "faithfulness": null,
+      "answer_relevance": 0.3414963911141836,
+      "context_recall": 0.9545454545454546,
+      "context_precision": 0.8775252525252526,
+      "average": 0.7245223660616302,
+      "source_mrr": 0.9772727272727273,
+      "refusal_rate": 1.0,
+      "retrieval_seconds_per_query": 0.1451158184998514,
+      "generation_seconds_per_query": 0.06015769913648745
+    },
+    "rows": [
+      {
+        "id": "q01",
+        "question": "Những tổ chức, cá nhân nào không có quyền thành lập và quản lý doanh nghiệp tại Việt Nam?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.435274907284769,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.8117583024282563,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q02",
+        "question": "Luật Doanh nghiệp số 59/2020/QH14 có hiệu lực thi hành từ ngày nào?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "article_01.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.32004619905158543,
+        "context_recall": 1.0,
+        "context_precision": 0.5888888888888889,
+        "average": 0.6363116959801581,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q03",
+        "question": "Hộ kinh doanh sử dụng bao nhiêu lao động thì bắt buộc phải đăng ký thành lập doanh nghiệp?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "luat-doanh-nghiep-59-2020-qh14.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3048808294686465,
+        "context_recall": 1.0,
+        "context_precision": 0.9166666666666666,
+        "average": 0.7405158320451043,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q04",
+        "question": "Khi chuyển đổi từ hộ kinh doanh lên doanh nghiệp cần nộp kèm những giấy tờ gì?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.35468069215236186,
+        "context_recall": 1.0,
+        "context_precision": 0.95,
+        "average": 0.7682268973841206,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q05",
+        "question": "Sau khi hộ kinh doanh chuyển đổi thành doanh nghiệp, ai chịu trách nhiệm với các khoản nợ phát sinh trước khi chuyển đổi?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "article_02.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "article_02.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.33348625921068326,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7778287530702278,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q06",
+        "question": "Những đối tượng nào không phải đăng ký hộ kinh doanh?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.37640865371954546,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7921362179065152,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q07",
+        "question": "Một cá nhân được đăng ký tối đa bao nhiêu hộ kinh doanh?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "article_02.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.37011746700750103,
+        "context_recall": 1.0,
+        "context_precision": 0.5,
+        "average": 0.6233724890025004,
+        "source_mrr": 0.5
+      },
+      {
+        "id": "q08",
+        "question": "Tên hộ kinh doanh gồm những thành tố nào và có được dùng cụm từ \"công ty\" không?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.35158469395433756,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7838615646514459,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q09",
+        "question": "Mã số đăng ký hộ kinh doanh có phải là mã số thuế không?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "article_05.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.36972063885673545,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7899068796189118,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q10",
+        "question": "Hồ sơ đăng ký hộ kinh doanh nộp ở đâu và bao lâu thì được cấp giấy chứng nhận?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3660286621191204,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7886762207063734,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q11",
+        "question": "Hộ kinh doanh tạm ngừng kinh doanh từ 30 ngày trở lên phải thông báo cho ai và trước bao lâu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "article_06.md",
+          "luat-doanh-nghiep-59-2020-qh14.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.36723932257988473,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7890797741932949,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q12",
+        "question": "Chủ hộ kinh doanh phải đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hộ kinh doanh trong thời hạn bao lâu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.36547991836684657,
+        "context_recall": 1.0,
+        "context_precision": 0.95,
+        "average": 0.7718266394556155,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q13",
+        "question": "Hộ kinh doanh có doanh thu bao nhiêu thì không phải nộp thuế GTGT và thuế TNCN theo Thông tư 40/2021?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_04.md",
+          "article_04.md",
+          "article_01.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3113193836235098,
+        "context_recall": 1.0,
+        "context_precision": 0.8333333333333333,
+        "average": 0.7148842389856144,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q14",
+        "question": "Tỷ lệ thuế GTGT và thuế TNCN đối với hoạt động phân phối, cung cấp hàng hóa là bao nhiêu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_01.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.30749664674676025,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7691655489155867,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q15",
+        "question": "Hoạt động cho thuê tài sản của hộ kinh doanh chịu tỷ lệ thuế bao nhiêu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_03.md",
+          "article_04.md",
+          "article_04.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.2955087691915216,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7651695897305072,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q16",
+        "question": "Khi nào cơ quan thuế xác định lại mức thuế khoán của hộ kinh doanh?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_04.md",
+          "article_04.md",
+          "article_05.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.32785042309662454,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7759501410322082,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q17",
+        "question": "Hộ kinh doanh nộp thuế theo phương pháp kê khai có phải quyết toán thuế không?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_03.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_02.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3696900858199921,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7898966952733307,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q18",
+        "question": "Theo dự thảo của Bộ Tài chính, hộ kinh doanh nào được giảm 30% thuế thu nhập cá nhân và trong những năm nào?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_04.md",
+        "retrieved_sources": [
+          "article_04.md",
+          "article_01.md",
+          "article_04.md",
+          "article_04.md",
+          "article_01.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.28198575019967687,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7606619167332256,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q19",
+        "question": "Nếu doanh thu thực tế của hộ kinh doanh vượt 10 tỷ đồng sau khi đã được giảm 30% thuế thì phải làm gì?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_04.md",
+        "retrieved_sources": [
+          "article_04.md",
+          "article_04.md",
+          "article_04.md",
+          "article_04.md",
+          "article_04.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.337224393789392,
+        "context_recall": 1.0,
+        "context_precision": 0.8666666666666667,
+        "average": 0.734630353485353,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q20",
+        "question": "Dự thảo Luật Phát triển doanh nghiệp nhỏ và vừa cho hộ kinh doanh có doanh thu đến 10 tỷ đồng lựa chọn những phương pháp tính thuế nào?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_03.md",
+        "retrieved_sources": [
+          "article_03.md",
+          "article_03.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_03.md",
+          "article_04.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3197512112783796,
+        "context_recall": 1.0,
+        "context_precision": 0.7,
+        "average": 0.6732504037594599,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q21",
+        "question": "Có bao nhiêu hộ kinh doanh có doanh thu dưới 10 tỷ đồng và chiếm tỷ lệ bao nhiêu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_03.md",
+        "retrieved_sources": [
+          "article_03.md",
+          "article_03.md",
+          "article_03.md",
+          "article_04.md",
+          "article_04.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3171939526371637,
+        "context_recall": 0.0,
+        "context_precision": 0.0,
+        "average": 0.10573131754572124,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q22",
+        "question": "Hộ kinh doanh hoạt động tại nhiều địa điểm thì kê khai thuế VAT và thuế TNCN ở đâu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_03.md",
+        "retrieved_sources": [
+          "article_03.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "article_02.md",
+          "article_03.md",
+          "article_02.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.32995174435700225,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.776650581452334,
+        "source_mrr": 1.0
+      }
+    ]
+  },
+  "B_hybrid_rrf": {
+    "summary": {
+      "faithfulness": null,
+      "answer_relevance": 0.3414963911141836,
+      "context_recall": 0.9545454545454546,
+      "context_precision": 0.8712121212121212,
+      "average": 0.7224179889572531,
+      "source_mrr": 1.0,
+      "refusal_rate": 1.0,
+      "retrieval_seconds_per_query": 0.13137446595473276,
+      "generation_seconds_per_query": 0.0001861162724956309
+    },
+    "rows": [
+      {
+        "id": "q01",
+        "question": "Những tổ chức, cá nhân nào không có quyền thành lập và quản lý doanh nghiệp tại Việt Nam?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "article_04.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.435274907284769,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.8117583024282563,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q02",
+        "question": "Luật Doanh nghiệp số 59/2020/QH14 có hiệu lực thi hành từ ngày nào?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "article_01.md",
+          "article_01.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.32004619905158543,
+        "context_recall": 1.0,
+        "context_precision": 0.5888888888888889,
+        "average": 0.6363116959801581,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q03",
+        "question": "Hộ kinh doanh sử dụng bao nhiêu lao động thì bắt buộc phải đăng ký thành lập doanh nghiệp?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3048808294686465,
+        "context_recall": 1.0,
+        "context_precision": 0.7555555555555555,
+        "average": 0.6868121283414007,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q04",
+        "question": "Khi chuyển đổi từ hộ kinh doanh lên doanh nghiệp cần nộp kèm những giấy tờ gì?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "article_02.md",
+          "article_05.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.35468069215236186,
+        "context_recall": 1.0,
+        "context_precision": 0.8666666666666667,
+        "average": 0.7404491196063429,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q05",
+        "question": "Sau khi hộ kinh doanh chuyển đổi thành doanh nghiệp, ai chịu trách nhiệm với các khoản nợ phát sinh trước khi chuyển đổi?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md",
+        "retrieved_sources": [
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.33348625921068326,
+        "context_recall": 1.0,
+        "context_precision": 0.75,
+        "average": 0.6944954197368944,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q06",
+        "question": "Những đối tượng nào không phải đăng ký hộ kinh doanh?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.37640865371954546,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7921362179065152,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q07",
+        "question": "Một cá nhân được đăng ký tối đa bao nhiêu hộ kinh doanh?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.37011746700750103,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.790039155669167,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q08",
+        "question": "Tên hộ kinh doanh gồm những thành tố nào và có được dùng cụm từ \"công ty\" không?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "article_02.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.35158469395433756,
+        "context_recall": 1.0,
+        "context_precision": 0.95,
+        "average": 0.7671948979847792,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q09",
+        "question": "Mã số đăng ký hộ kinh doanh có phải là mã số thuế không?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.36972063885673545,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7899068796189118,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q10",
+        "question": "Hồ sơ đăng ký hộ kinh doanh nộp ở đâu và bao lâu thì được cấp giấy chứng nhận?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3660286621191204,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7886762207063734,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q11",
+        "question": "Hộ kinh doanh tạm ngừng kinh doanh từ 30 ngày trở lên phải thông báo cho ai và trước bao lâu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.36723932257988473,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7890797741932949,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q12",
+        "question": "Chủ hộ kinh doanh phải đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hộ kinh doanh trong thời hạn bao lâu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+        "retrieved_sources": [
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "luat-doanh-nghiep-59-2020-qh14.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.36547991836684657,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7884933061222822,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q13",
+        "question": "Hộ kinh doanh có doanh thu bao nhiêu thì không phải nộp thuế GTGT và thuế TNCN theo Thông tư 40/2021?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_04.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3113193836235098,
+        "context_recall": 1.0,
+        "context_precision": 0.7,
+        "average": 0.6704397945411699,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q14",
+        "question": "Tỷ lệ thuế GTGT và thuế TNCN đối với hoạt động phân phối, cung cấp hàng hóa là bao nhiêu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_02.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.30749664674676025,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7691655489155867,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q15",
+        "question": "Hoạt động cho thuê tài sản của hộ kinh doanh chịu tỷ lệ thuế bao nhiêu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_03.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.2955087691915216,
+        "context_recall": 1.0,
+        "context_precision": 0.8055555555555555,
+        "average": 0.7003547749156924,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q16",
+        "question": "Khi nào cơ quan thuế xác định lại mức thuế khoán của hộ kinh doanh?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_05.md",
+          "article_04.md",
+          "article_05.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.32785042309662454,
+        "context_recall": 1.0,
+        "context_precision": 0.9166666666666666,
+        "average": 0.7481723632544304,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q17",
+        "question": "Hộ kinh doanh nộp thuế theo phương pháp kê khai có phải quyết toán thuế không?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+        "retrieved_sources": [
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_03.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3696900858199921,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7898966952733307,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q18",
+        "question": "Theo dự thảo của Bộ Tài chính, hộ kinh doanh nào được giảm 30% thuế thu nhập cá nhân và trong những năm nào?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_04.md",
+        "retrieved_sources": [
+          "article_04.md",
+          "article_04.md",
+          "article_01.md",
+          "article_01.md",
+          "article_01.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.28198575019967687,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7606619167332256,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q19",
+        "question": "Nếu doanh thu thực tế của hộ kinh doanh vượt 10 tỷ đồng sau khi đã được giảm 30% thuế thì phải làm gì?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_04.md",
+        "retrieved_sources": [
+          "article_04.md",
+          "article_04.md",
+          "article_04.md",
+          "article_01.md",
+          "article_04.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.337224393789392,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.7790747979297974,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q20",
+        "question": "Dự thảo Luật Phát triển doanh nghiệp nhỏ và vừa cho hộ kinh doanh có doanh thu đến 10 tỷ đồng lựa chọn những phương pháp tính thuế nào?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_03.md",
+        "retrieved_sources": [
+          "article_03.md",
+          "article_03.md",
+          "article_04.md",
+          "article_04.md",
+          "article_03.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3197512112783796,
+        "context_recall": 1.0,
+        "context_precision": 0.8333333333333333,
+        "average": 0.7176948482039043,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q21",
+        "question": "Có bao nhiêu hộ kinh doanh có doanh thu dưới 10 tỷ đồng và chiếm tỷ lệ bao nhiêu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_03.md",
+        "retrieved_sources": [
+          "article_03.md",
+          "article_03.md",
+          "article_03.md",
+          "article_04.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.3171939526371637,
+        "context_recall": 0.0,
+        "context_precision": 0.0,
+        "average": 0.10573131754572124,
+        "source_mrr": 1.0
+      },
+      {
+        "id": "q22",
+        "question": "Hộ kinh doanh hoạt động tại nhiều địa điểm thì kê khai thuế VAT và thuế TNCN ở đâu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "refused": true,
+        "error": "OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.",
+        "expected_source": "news/article_03.md",
+        "retrieved_sources": [
+          "article_03.md",
+          "nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md",
+          "article_02.md",
+          "thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md",
+          "article_02.md"
+        ],
+        "faithfulness": null,
+        "answer_relevance": 0.32995174435700225,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.776650581452334,
+        "source_mrr": 1.0
+      }
+    ]
+  },
+  "meta": {
+    "top_k": 5,
+    "score_threshold": 0.55,
+    "dataset_size": 22
+  }
+}

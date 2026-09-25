@@ -23,7 +23,7 @@ def semantic_search(query: str, top_k: int = 10) -> list[dict]:
             "id": item_id,
             "content": content,
             "score": max(0.0, 1.0 - float(distance)),
-            "metadata": metadata,
+            "metadata": {"url": None, **metadata},
             "retrieval_method": "dense",
         }
         for item_id, content, metadata, distance in zip(

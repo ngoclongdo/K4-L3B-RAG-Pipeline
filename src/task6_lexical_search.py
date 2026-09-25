@@ -11,6 +11,7 @@ from .task4_chunking_indexing import chunk_documents, load_documents
 
 
 CORPUS: list[dict] = []
+_INDEX_CACHE: dict = {}
 
 
 def tokenize(text: str) -> list[str]:
@@ -25,6 +26,18 @@ def build_bm25_index(corpus: list[dict]):
     return BM25Plus([tokenize(item["content"]) for item in corpus])
 
 
+def get_index():
+    """Build BM25 index một lần cho mỗi corpus; build lại khi CORPUS bị thay hoặc đổi kích thước."""
+    key = (id(CORPUS), len(CORPUS))
+    if _INDEX_CACHE.get("key") != key:
+        _INDEX_CACHE.update(
+            key=key,
+            bm25=build_bm25_index(CORPUS),
+            token_sets=[set(tokenize(item["content"])) for item in CORPUS],
+        )
+    return _INDEX_CACHE["bm25"], _INDEX_CACHE["token_sets"]
+
+
 def lexical_search(query: str, top_k: int = 10) -> list[dict]:
     """Trả về BM25 SearchResult theo score giảm dần."""
     query_tokens = tokenize(query)
@@ -35,14 +48,14 @@ def lexical_search(query: str, top_k: int = 10) -> list[dict]:
     if not CORPUS:
         return []
 
-    # ponytail: build lại index mỗi query, O(N); cache khi corpus lớn
-    scores = build_bm25_index(CORPUS).get_scores(query_tokens)
+    bm25, token_sets = get_index()
+    scores = bm25.get_scores(query_tokens)
     query_set = set(query_tokens)
     ranked = sorted(
         (
             (float(score), item)
-            for score, item in zip(scores, CORPUS)
-            if query_set & set(tokenize(item["content"]))
+            for score, item, tokens in zip(scores, CORPUS, token_sets)
+            if query_set & tokens
         ),
         key=lambda pair: pair[0],
         reverse=True,

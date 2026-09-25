@@ -1,0 +1,156 @@
+[
+  {
+    "id": "q01",
+    "question": "Những tổ chức, cá nhân nào không có quyền thành lập và quản lý doanh nghiệp tại Việt Nam?",
+    "expected_answer": "Theo Điều 17 Luật Doanh nghiệp 2020: cơ quan nhà nước, đơn vị lực lượng vũ trang dùng tài sản nhà nước để kinh doanh thu lợi riêng; cán bộ, công chức, viên chức; sĩ quan, quân nhân chuyên nghiệp, công nhân công an; người chưa thành niên, người bị hạn chế hoặc mất năng lực hành vi dân sự; người đang bị truy cứu trách nhiệm hình sự, tạm giam, chấp hành hình phạt tù hoặc bị Tòa án cấm hành nghề.",
+    "expected_context": "Tổ chức, cá nhân sau đây không có quyền thành lập và quản lý doanh nghiệp tại Việt Nam: a) Cơ quan nhà nước, đơn vị lực lượng vũ trang nhân dân sử dụng tài sản nhà nước để thành lập doanh nghiệp kinh doanh thu lợi riêng cho cơ quan, đơn vị mình; b) Cán bộ, công chức, viên chức theo quy định của Luật Cán bộ, công chức và Luật Viên chức; d) Người chưa thành niên; người bị hạn chế năng lực hành vi dân sự; người bị mất năng lực hành vi dân sự.",
+    "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md"
+  },
+  {
+    "id": "q02",
+    "question": "Luật Doanh nghiệp số 59/2020/QH14 có hiệu lực thi hành từ ngày nào?",
+    "expected_answer": "Luật có hiệu lực thi hành từ ngày 01 tháng 01 năm 2021.",
+    "expected_context": "Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2021.",
+    "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md"
+  },
+  {
+    "id": "q03",
+    "question": "Hộ kinh doanh sử dụng bao nhiêu lao động thì bắt buộc phải đăng ký thành lập doanh nghiệp?",
+    "expected_answer": "Hộ kinh doanh sử dụng thường xuyên từ 10 lao động trở lên phải đăng ký thành lập doanh nghiệp.",
+    "expected_context": "Hộ kinh doanh sử dụng thường xuyên từ 10 lao động trở lên phải đăng ký thành lập doanh nghiệp hoạt động theo quy định của Luật này.",
+    "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md"
+  },
+  {
+    "id": "q04",
+    "question": "Khi chuyển đổi từ hộ kinh doanh lên doanh nghiệp cần nộp kèm những giấy tờ gì?",
+    "expected_answer": "Bản chính Giấy chứng nhận đăng ký hộ kinh doanh, bản sao Giấy chứng nhận đăng ký thuế và giấy tờ tương ứng với loại hình doanh nghiệp thành lập mới.",
+    "expected_context": "Doanh nghiệp được thành lập trên cơ sở chuyển đổi từ hộ kinh doanh phải nộp hồ sơ đăng ký doanh nghiệp tại Cơ quan đăng ký kinh doanh kèm theo các giấy tờ sau: a) Bản chính Giấy chứng nhận đăng ký hộ kinh doanh; b) Bản sao Giấy chứng nhận đăng ký thuế; c) Giấy tờ quy định tương ứng với từng loại hình doanh nghiệp thành lập mới.",
+    "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md"
+  },
+  {
+    "id": "q05",
+    "question": "Sau khi hộ kinh doanh chuyển đổi thành doanh nghiệp, ai chịu trách nhiệm với các khoản nợ phát sinh trước khi chuyển đổi?",
+    "expected_answer": "Chủ hộ kinh doanh và các thành viên hộ gia đình cùng chịu trách nhiệm liên đới bằng toàn bộ tài sản của mình đối với các khoản nợ chưa thanh toán phát sinh trước khi chuyển đổi.",
+    "expected_context": "Chủ hộ kinh doanh và các thành viên hộ gia đình cùng chịu trách nhiệm liên đới bằng toàn bộ tài sản của mình đối với các khoản nợ chưa thanh toán của hộ kinh doanh phát sinh trước khi chuyển đổi.",
+    "expected_source": "legal/luat-doanh-nghiep-59-2020-qh14.md"
+  },
+  {
+    "id": "q06",
+    "question": "Những đối tượng nào không phải đăng ký hộ kinh doanh?",
+    "expected_answer": "Hộ gia đình sản xuất nông, lâm, ngư nghiệp, làm muối và người bán hàng rong, quà vặt, buôn chuyến, kinh doanh lưu động, kinh doanh thời vụ, làm dịch vụ có thu nhập thấp, trừ trường hợp kinh doanh ngành, nghề đầu tư kinh doanh có điều kiện.",
+    "expected_context": "Hộ gia đình sản xuất nông, lâm, ngư nghiệp, làm muối và những người bán hàng rong, quà vặt, buôn chuyến, kinh doanh lưu động, kinh doanh thời vụ, làm dịch vụ có thu nhập thấp không phải đăng ký hộ kinh doanh, trừ trường hợp kinh doanh các ngành, nghề đầu tư kinh doanh có điều kiện.",
+    "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+  },
+  {
+    "id": "q07",
+    "question": "Một cá nhân được đăng ký tối đa bao nhiêu hộ kinh doanh?",
+    "expected_answer": "Mỗi cá nhân, thành viên hộ gia đình chỉ được đăng ký một hộ kinh doanh trong phạm vi toàn quốc.",
+    "expected_context": "Cá nhân, thành viên hộ gia đình quy định tại khoản 1 Điều này chỉ được đăng ký một hộ kinh doanh trong phạm vi toàn quốc và được quyền góp vốn, mua cổ phần, mua phần vốn góp trong doanh nghiệp với tư cách cá nhân.",
+    "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+  },
+  {
+    "id": "q08",
+    "question": "Tên hộ kinh doanh gồm những thành tố nào và có được dùng cụm từ \"công ty\" không?",
+    "expected_answer": "Tên hộ kinh doanh gồm cụm từ \"Hộ kinh doanh\" và tên riêng; hộ kinh doanh không được dùng cụm từ \"công ty\", \"doanh nghiệp\" để đặt tên.",
+    "expected_context": "Tên hộ kinh doanh bao gồm hai thành tố theo thứ tự sau đây: a) Cụm từ \"Hộ kinh doanh\"; b) Tên riêng của hộ kinh doanh. Hộ kinh doanh không được sử dụng các cụm từ \"công ty\", \"doanh nghiệp\" để đặt tên hộ kinh doanh.",
+    "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+  },
+  {
+    "id": "q09",
+    "question": "Mã số đăng ký hộ kinh doanh có phải là mã số thuế không?",
+    "expected_answer": "Có. Mã số đăng ký hộ kinh doanh đồng thời là mã số thuế của hộ kinh doanh.",
+    "expected_context": "Mã số đăng ký hộ kinh doanh đồng thời là mã số thuế của hộ kinh doanh được tạo bởi Hệ thống ứng dụng đăng ký thuế và được truyền sang Hệ thống thông tin về đăng ký hộ kinh doanh.",
+    "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+  },
+  {
+    "id": "q10",
+    "question": "Hồ sơ đăng ký hộ kinh doanh nộp ở đâu và bao lâu thì được cấp giấy chứng nhận?",
+    "expected_answer": "Nộp tại Cơ quan đăng ký kinh doanh cấp huyện nơi đặt trụ sở hộ kinh doanh; giấy chứng nhận được cấp trong 03 ngày làm việc kể từ ngày nhận hồ sơ hợp lệ.",
+    "expected_context": "người thành lập hộ kinh doanh hoặc hộ kinh doanh nộp hồ sơ tại Cơ quan đăng ký kinh doanh cấp huyện nơi đặt trụ sở hộ kinh doanh. Cơ quan đăng ký kinh doanh cấp huyện trao Giấy biên nhận và cấp Giấy chứng nhận đăng ký hộ kinh doanh cho hộ kinh doanh trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ hợp lệ.",
+    "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+  },
+  {
+    "id": "q11",
+    "question": "Hộ kinh doanh tạm ngừng kinh doanh từ 30 ngày trở lên phải thông báo cho ai và trước bao lâu?",
+    "expected_answer": "Phải thông báo với Cơ quan đăng ký kinh doanh cấp huyện và Cơ quan thuế trực tiếp quản lý ít nhất 03 ngày làm việc trước khi tạm ngừng.",
+    "expected_context": "Trường hợp tạm ngừng kinh doanh từ 30 ngày trở lên, hộ kinh doanh phải thông báo với Cơ quan đăng ký kinh doanh cấp huyện nơi đã đăng ký kinh doanh và Cơ quan thuế trực tiếp quản lý ít nhất 03 ngày làm việc trước khi tạm ngừng kinh doanh.",
+    "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+  },
+  {
+    "id": "q12",
+    "question": "Chủ hộ kinh doanh phải đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hộ kinh doanh trong thời hạn bao lâu?",
+    "expected_answer": "Trong thời hạn 10 ngày kể từ ngày có thay đổi.",
+    "expected_context": "Chủ hộ kinh doanh có trách nhiệm đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hộ kinh doanh với Cơ quan đăng ký kinh doanh cấp huyện trong thời hạn 10 ngày kể từ ngày có thay đổi.",
+    "expected_source": "legal/nghi-dinh-01-2021-nd-cp-dang-ky-doanh-nghiep.md"
+  },
+  {
+    "id": "q13",
+    "question": "Hộ kinh doanh có doanh thu bao nhiêu thì không phải nộp thuế GTGT và thuế TNCN theo Thông tư 40/2021?",
+    "expected_answer": "Doanh thu trong năm dương lịch từ 100 triệu đồng trở xuống thì không phải nộp thuế GTGT và thuế TNCN.",
+    "expected_context": "Hộ kinh doanh, cá nhân kinh doanh có doanh thu từ hoạt động sản xuất, kinh doanh trong năm dương lịch từ 100 triệu đồng trở xuống thì thuộc trường hợp không phải nộp thuế GTGT và không phải nộp thuế TNCN.",
+    "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+  },
+  {
+    "id": "q14",
+    "question": "Tỷ lệ thuế GTGT và thuế TNCN đối với hoạt động phân phối, cung cấp hàng hóa là bao nhiêu?",
+    "expected_answer": "Tỷ lệ thuế GTGT 1% và tỷ lệ thuế TNCN 0,5%.",
+    "expected_context": "a) Phân phối, cung cấp hàng hóa: - Tỷ lệ thuế GTGT: 1% - Tỷ lệ thuế TNCN: 0.5%",
+    "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+  },
+  {
+    "id": "q15",
+    "question": "Hoạt động cho thuê tài sản của hộ kinh doanh chịu tỷ lệ thuế bao nhiêu?",
+    "expected_answer": "Tỷ lệ thuế GTGT 5% và tỷ lệ thuế TNCN 5%.",
+    "expected_context": "Riêng hoạt động cho thuê tài sản: tỷ lệ thuế GTGT 5%, tỷ lệ thuế TNCN 5%.",
+    "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+  },
+  {
+    "id": "q16",
+    "question": "Khi nào cơ quan thuế xác định lại mức thuế khoán của hộ kinh doanh?",
+    "expected_answer": "Khi hộ khoán có biến động doanh thu kinh doanh từ 50% trở lên.",
+    "expected_context": "Mức thuế khoán được tính theo năm dương lịch hoặc theo tháng đối với kinh doanh thời vụ. Trường hợp hộ khoán có biến động doanh thu kinh doanh từ 50% trở lên thì cơ quan thuế xác định lại mức thuế khoán.",
+    "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+  },
+  {
+    "id": "q17",
+    "question": "Hộ kinh doanh nộp thuế theo phương pháp kê khai có phải quyết toán thuế không?",
+    "expected_answer": "Không. Hộ kê khai không phải quyết toán thuế và thực hiện khai thuế theo tháng hoặc theo quý.",
+    "expected_context": "Hộ kê khai không phải quyết toán thuế. Hộ kê khai thực hiện khai thuế theo tháng hoặc theo quý theo quy định của Luật Quản lý thuế và các văn bản hướng dẫn thi hành.",
+    "expected_source": "legal/thong-tu-40-2021-tt-btc-thue-ho-kinh-doanh.md"
+  },
+  {
+    "id": "q18",
+    "question": "Theo dự thảo của Bộ Tài chính, hộ kinh doanh nào được giảm 30% thuế thu nhập cá nhân và trong những năm nào?",
+    "expected_answer": "Hộ kinh doanh, cá nhân kinh doanh có doanh thu hằng năm không quá 10 tỷ đồng được giảm 30% số thuế TNCN phải nộp đối với thu nhập từ kinh doanh trong năm 2026 và 2027.",
+    "expected_context": "Theo dự thảo, hộ kinh doanh, cá nhân kinh doanh có doanh thu hằng năm trong năm 2026 và 2027 không quá 10 tỷ đồng được giảm 30% số thuế thu nhập cá nhân phải nộp của kỳ tính thuế tương ứng đối với thu nhập từ kinh doanh.",
+    "expected_source": "news/article_04.md"
+  },
+  {
+    "id": "q19",
+    "question": "Nếu doanh thu thực tế của hộ kinh doanh vượt 10 tỷ đồng sau khi đã được giảm 30% thuế thì phải làm gì?",
+    "expected_answer": "Hộ kinh doanh không còn được hưởng chính sách, phải kê khai điều chỉnh và nộp bổ sung số thuế đã được giảm, nhưng không bị tính tiền chậm nộp.",
+    "expected_context": "Nếu tổng doanh thu thực tế vượt 10 tỷ đồng, hộ kinh doanh không còn thuộc diện được hưởng chính sách. Người nộp thuế phải kê khai điều chỉnh và nộp bổ sung số thuế đã được giảm cùng hồ sơ khai thuế quý phát sinh doanh thu vượt 10 tỷ đồng. Tuy nhiên, theo đề xuất, số thuế phải nộp bổ sung do xác định lại điều kiện giảm thuế sẽ không bị tính tiền chậm nộp.",
+    "expected_source": "news/article_04.md"
+  },
+  {
+    "id": "q20",
+    "question": "Dự thảo Luật Phát triển doanh nghiệp nhỏ và vừa cho hộ kinh doanh có doanh thu đến 10 tỷ đồng lựa chọn những phương pháp tính thuế nào?",
+    "expected_answer": "Được lựa chọn một trong 2 phương pháp: tính thuế theo tỷ lệ trên doanh thu hoặc tính trên lợi nhuận.",
+    "expected_context": "Tại dự thảo Luật Phát triển doanh nghiệp nhỏ và vừa, Bộ Tài chính đề xuất doanh nghiệp, hộ kinh doanh có doanh thu đến 10 tỷ đồng/năm được lựa chọn một trong 2 phương pháp tính thuế, gồm tính theo tỷ lệ trên doanh thu hoặc tính trên lợi nhuận.",
+    "expected_source": "news/article_03.md"
+  },
+  {
+    "id": "q21",
+    "question": "Có bao nhiêu hộ kinh doanh có doanh thu dưới 10 tỷ đồng và chiếm tỷ lệ bao nhiêu?",
+    "expected_answer": "Khoảng 2,69 triệu hộ kinh doanh, chiếm 99,98% tổng số hộ kinh doanh trên cả nước.",
+    "expected_context": "số hộ kinh doanh có doanh thu dưới 10 tỷ đồng là 2,69 triệu hộ kinh doanh, chiếm tới 99,98% tổng số hộ kinh doanh trên cả nước.",
+    "expected_source": "news/article_03.md"
+  },
+  {
+    "id": "q22",
+    "question": "Hộ kinh doanh hoạt động tại nhiều địa điểm thì kê khai thuế VAT và thuế TNCN ở đâu?",
+    "expected_answer": "Doanh thu và thuế VAT được kê khai, nộp theo từng địa điểm kinh doanh; thuế thu nhập cá nhân được nộp tại trụ sở chính.",
+    "expected_context": "Với hộ kinh doanh có hoạt động tại nhiều địa điểm, doanh thu và thuế VAT được kê khai, nộp theo từng địa điểm kinh doanh. Trong khi đó, thuế thu nhập cá nhân được nộp tại trụ sở chính.",
+    "expected_source": "news/article_03.md"
+  }
+]
