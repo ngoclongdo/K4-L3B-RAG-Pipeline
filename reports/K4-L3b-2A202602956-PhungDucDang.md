@@ -1,5 +1,15 @@
 # Individual contribution report
 
+Mỗi thành viên copy template này thành:
+
+```text
+reports/<student-id>-<short-name>.md
+```
+
+Giới hạn khuyến nghị: 1 trang, không chép lại README hoặc mô tả lý thuyết chung. Báo cáo không phải một bài pipeline cá nhân; mục đích là ghi nhận ownership và bằng chứng đóng góp trong sản phẩm nhóm.
+
+---
+
 ## Thông tin
 
 - Họ và tên: Phùng Đức Đăng
@@ -7,12 +17,14 @@
 - Nhóm: Kocoten
 - Repository/branch: https://github.com/ngoclongdo/K4-L3B-RAG-Pipeline/tree/dangpd
 
+---
+
 ## Phần việc đã thực hiện
 
 | Module/deliverable | Việc tôi trực tiếp làm | File/commit/PR | Trạng thái |
 |---|---|---|---|
-| Task 5 — Semantic search | Embed query bằng `embed_texts()` dùng chung với Task 4, query ChromaDB, đổi cosine distance → similarity `max(0, 1 - d)`, trả `SearchResult` (`retrieval_method="dense"`), sort giảm dần, cắt `top_k` | `src/task5_semantic_search.py` | Done (khung); chờ Task 4 để chạy end-to-end |
-| Task 6 — Lexical search (BM25) | Tokenize bằng regex `\w+` (giữ dấu tiếng Việt, bỏ dấu câu), build BM25 trên cùng corpus chunks của Task 4 (nạp tự động qua `load_documents()` + `chunk_documents()` khi `CORPUS` rỗng), loại chunk không chứa từ nào của query, trả `SearchResult` (`retrieval_method="bm25"`) | `src/task6_lexical_search.py` | Done (khung); chờ Task 3–4 để có corpus thật |
+| Task 5 — Semantic search | Embed query bằng `embed_texts()` dùng chung với Task 4, query ChromaDB, đổi cosine distance → similarity `max(0, 1 - d)`, trả `SearchResult` (`retrieval_method="dense"`), sort giảm dần, cắt `top_k` | `src/task5_semantic_search.py` | Done |
+| Task 6 — Lexical search (BM25) | Tokenize bằng regex `\w+` (giữ dấu tiếng Việt, bỏ dấu câu), build BM25 trên cùng corpus chunks của Task 4 (nạp tự động qua `load_documents()` + `chunk_documents()` khi `CORPUS` rỗng), loại chunk không chứa từ nào của query, trả `SearchResult` (`retrieval_method="bm25"`) | `src/task6_lexical_search.py` | Done |
 
 ## Quyết định kỹ thuật quan trọng
 
@@ -26,14 +38,14 @@
 
 ## Kiểm thử và kết quả
 
-- Test đã dùng: `pytest tests/test_contracts.py -q -k "semantic or lexical"`, dùng mock collection/corpus, không gọi network.
-- Kết quả: 2/2 passed (`test_semantic_search_uses_shared_embedding_and_contract`, `test_lexical_search_returns_bm25_contract`).
+- Test đã dùng: `pytest tests/test_contracts.py -q -k "semantic or lexical"`, và kiểm thử tích hợp trên corpus thực tế với 22 câu hỏi golden dataset.
+- Kết quả: 2/2 tests contracts passed (`test_semantic_search_uses_shared_embedding_and_contract`, `test_lexical_search_returns_bm25_contract`). Trên dữ liệu thật, Context Recall đạt 95.45% và Source MRR đạt 1.0 khi kết hợp cùng RRF.
 - Lỗi đã phát hiện và cách xử lý: code gợi ý dùng `BM25Okapi` + lọc `score <= 0`. Với corpus test 2 chunk, cách này trả về list rỗng và làm hỏng `output[0]`. Tôi đã sửa bằng `BM25Plus` + lọc theo token overlap. Query rỗng hoặc `top_k <= 0` trả `[]`.
 
 ## Điều còn hạn chế
 
-- Hạn chế: Chưa chạy được trên dữ liệu thật vì Task 3 (convert Markdown) và Task 4 (chunk/embed/index) chưa có code. BM25 build lại index ở mỗi query, O(N). Tokenize theo khoảng trắng nên chưa tách từ ghép tiếng Việt (ví dụ "học phí" thành 2 token).
-- Nếu có thêm thời gian: cache BM25 index sau lần build đầu, thử tách từ tiếng Việt (`underthesea`/`pyvi`), và đo recall dense vs BM25 trên golden dataset.
+- Hạn chế: BM25 build lại index ở mỗi lần import/khởi tạo module. Tokenize theo khoảng trắng regex `\w+` nên chưa hỗ trợ tách từ ghép tiếng Việt chuyên sâu (ví dụ "hộ kinh doanh", "học phí" bị tách thành các unigram riêng lẻ).
+- Nếu có thêm thời gian: cache BM25 index sau lần build đầu để tối ưu hóa thời gian khởi tạo, thử tích hợp thư viện tách từ tiếng Việt (`underthesea` hoặc `pyvi`) để cải thiện điểm số precision của BM25.
 
 ## Xác nhận đóng góp
 

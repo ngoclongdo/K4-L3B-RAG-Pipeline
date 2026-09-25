@@ -3,7 +3,7 @@
 Mỗi thành viên copy template này thành:
 
 ```text
-reports/K4-L3A-2A202603006-PhungThanhAn.md
+reports/<student-id>-<short-name>.md
 ```
 
 Giới hạn khuyến nghị: 1 trang, không chép lại README hoặc mô tả lý thuyết chung. Báo cáo không phải một bài pipeline cá nhân; mục đích là ghi nhận ownership và bằng chứng đóng góp trong sản phẩm nhóm.
@@ -21,7 +21,7 @@ Giới hạn khuyến nghị: 1 trang, không chép lại README hoặc mô tả
 
 | Module/deliverable | Việc tôi trực tiếp làm | File/commit/PR | Trạng thái |
 |---|---|---|---|
-| Task 3 — chuẩn hóa corpus | Implement `convert_legal_docs()` (MarkItDown cho PDF/DOC/DOCX) và `convert_news_articles()` (JSON → Markdown kèm header title/source/date cho citation); xử lý idempotent, bỏ qua nội dung rỗng, log lỗi từng file, cảnh báo khi thiếu số lượng tối thiểu | `src/task3_convert_markdown.py` — branch `thanhan` (hash: `<điền-sau-khi-push>`) | Done |
+| Task 3 — chuẩn hóa corpus | Implement `convert_legal_docs()` (MarkItDown cho PDF/DOC/DOCX) và `convert_news_articles()` (JSON → Markdown kèm header title/source/date cho citation); xử lý idempotent, bỏ qua nội dung rỗng, log lỗi từng file, cảnh báo khi thiếu số lượng tối thiểu | `src/task3_convert_markdown.py` — branch `thanhan` | Done |
 | Task 4 — load & chunk | Implement `load_documents()` (Document theo contract, id ổn định theo đường dẫn file, parse `title`/`url` từ header news) và `chunk_documents()` (RecursiveCharacterTextSplitter, id `<doc_id>::chunk-<i>`, loại chunk rỗng, không mutate input) | `src/task4_chunking_indexing.py` — branch `thanhan` | Done |
 | Task 4 — embedding & indexing | Implement `embed_texts()` dispatch theo `EMBEDDING_PROVIDER` (sentence_transformers/openai/gemini, cache model), `get_collection()` cosine, `index_to_vectorstore()` upsert theo batch + sanitize metadata; `run_pipeline()` in thống kê chunk cho báo cáo nhóm | `src/task4_chunking_indexing.py` — branch `thanhan` | Done |
 | Kiểm thử phần mình làm | Chạy `pytest tests/test_acceptance.py -q` cho dữ liệu chuẩn hóa và `pytest tests/test_contracts.py -q` cho invariants của Task 4; viết script kiểm tra bổ sung: convert PDF Unicode, ID ổn định khi chạy lại, không trùng file khi re-convert | output `pytest` + log chạy trên branch `thanhan` | Done |
