@@ -12,7 +12,7 @@ Giới hạn khuyến nghị: 1 trang, không chép lại README hoặc mô tả
 
 ## Thông tin
 
-- Họ và tên: Cao Đức Anh
+- Họ và tên: Cao Đức Anh 
 - Mã học viên: 2A202602754
 - Nhóm: Kocoten
 - Repository/branch: https://github.com/ngoclongdo/K4-L3B-RAG-Pipeline/tree/ducanh
