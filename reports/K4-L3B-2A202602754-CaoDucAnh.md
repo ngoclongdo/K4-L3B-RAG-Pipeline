@@ -12,7 +12,7 @@ Giới hạn khuyến nghị: 1 trang, không chép lại README hoặc mô tả
 
 ## Thông tin
 
-- Họ và tên: Cao Đức Anh
+- Họ và tên: Cao Đức Anh 
 - Mã học viên: 2A202602754
 - Nhóm: Kocoten
 - Repository/branch: https://github.com/ngoclongdo/K4-L3B-RAG-Pipeline/tree/ducanh
@@ -25,8 +25,6 @@ Giới hạn khuyến nghị: 1 trang, không chép lại README hoặc mô tả
 |---|---|---|---|
 | Task 9 — Retrieval pipeline & Fallback | Xây dựng pipeline `retrieve()` hoàn chỉnh: kết hợp song song `semantic_search` và `lexical_search` (BM25), fuse thứ hạng qua `rerank_rrf()` đúng một lần; kiểm soát độ tự tin bằng best cosine score gốc của dense retrieval, kích hoạt fallback sang `pageindex_search` khi score dưới threshold; bọc cơ chế chống crash khi fallback lỗi. | `src/task9_retrieval_pipeline.py` | Done |
 | Task 10 — Generation có citation & Safe refusal | Xây dựng hàm `generate_with_citation()` và `generate_from_chunks()`: thuật toán `reorder_for_llm` giảm lost-in-the-middle, hàm `format_context` chuẩn hóa kèm title và source, cơ chế multi-provider (`OpenAI`, `Gemini`, `Anthropic`), hàm `extract_citations` trích xuất `[n]` map về `sources`, và safe refusal khi context không đủ bằng chứng hoặc provider lỗi. | `src/task10_generation.py` | Done |
-
-Chỉ kê khai công việc có thể đối chiếu bằng file, commit, pull request, test hoặc kết quả evaluation.
 
 ---
 
